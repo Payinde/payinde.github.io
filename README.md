@@ -43,3 +43,10 @@ This site can be published with GitHub Pages, Netlify, Cloudflare Pages, or any 
 - Refreshed the downloadable resume with the latest supplied PDF.
 - Updated the credentials area to **Education, Certifications & Training**, added the BSc in Computer Science, and aligned the credential list with the current resume.
 
+
+
+## Recent Updates
+
+- Added Ubuntu Application Server Secure Baseline & Recovery project and case study.
+- Updated Cybersecurity Portfolio Rebuild from In Progress to Completed.
+- Refined homepage professional summary wording.

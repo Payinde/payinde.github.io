@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+<title id="title">Ubuntu secure baseline project illustration</title>
+<desc id="desc">A stylized server hardening dashboard with firewall, SSH, package update, and recovery checkpoint elements.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#3b1b54"/></linearGradient>
+  <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="750" rx="44" fill="url(#bg)"/>
+<g opacity=".16" stroke="#94a3b8" stroke-width="2"><path d="M80 160h1040M80 310h1040M80 460h1040M80 610h1040"/></g>
+<circle cx="935" cy="190" r="88" fill="none" stroke="url(#accent)" stroke-width="14" filter="url(#glow)"/>
+<text x="873" y="204" fill="#fff" font-family="Inter,Arial" font-size="42" font-weight="900">UFW</text>
+<rect x="150" y="165" width="360" height="82" rx="18" fill="url(#accent)" opacity=".85"/>
+<rect x="150" y="300" width="520" height="56" rx="16" fill="#1e293b"/>
+<rect x="150" y="400" width="610" height="56" rx="16" fill="#1e293b"/>
+<rect x="150" y="500" width="475" height="56" rx="16" fill="#1e293b"/>
+<text x="150" y="122" fill="#e5f3ff" font-family="Inter,Arial" font-size="54" font-weight="900">Ubuntu Secure Baseline</text>
+<text x="170" y="217" fill="#0b1220" font-family="Inter,Arial" font-size="34" font-weight="900">wcds-app-01</text>
+<text x="170" y="337" fill="#cbd5e1" font-family="Inter,Arial" font-size="28" font-weight="800">SSH Hardened • UFW Restricted</text>
+<text x="170" y="437" fill="#cbd5e1" font-family="Inter,Arial" font-size="28" font-weight="800">GRUB Recovered • Kernel Validated</text>
+<text x="170" y="537" fill="#cbd5e1" font-family="Inter,Arial" font-size="28" font-weight="800">Netplan Corrected • Snapshot Created</text>
+<g transform="translate(860 420)"><rect width="210" height="130" rx="24" fill="#111827" stroke="#334155" stroke-width="4"/><circle cx="48" cy="50" r="13" fill="#34d399"/><circle cx="88" cy="50" r="13" fill="#f97316"/><circle cx="128" cy="50" r="13" fill="#22d3ee"/><path d="M48 92h112" stroke="#64748b" stroke-width="12" stroke-linecap="round"/></g>
+<text x="150" y="665" fill="#cbd5e1" font-family="Inter,Arial" font-size="30">Linux • Firewall • OpenSSH • Netplan • Recovery</text>
+</svg>

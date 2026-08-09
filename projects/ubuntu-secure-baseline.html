@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ayinde Perouza">
+  <meta name="theme-color" content="#0b1220" data-theme-color>
+  <link rel="icon" href="../img/ap-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Ubuntu Secure Baseline &amp; Recovery | Ayinde Perouza Portfolio</title>
+  <meta name="description" content="A case study documenting the secure baseline and recovery work completed on an Ubuntu 24.04 application server in a VMware lab.">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" data-header>
+  <a class="brand" href="../index.html#home" aria-label="Ayinde Perouza home">
+    <img src="../img/ap-logo.svg" alt="" class="brand__mark" width="44" height="44">
+    <span class="brand__text">Ayinde Perouza</span>
+  </a>
+  <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#platforms">Platforms</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+      <span class="theme-toggle__icon" data-theme-icon aria-hidden="true">🌙</span>
+      <span class="theme-toggle__text" data-theme-label>Dark</span>
+    </button>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <article class="case-study" id="top">
+    <header class="case-hero">
+      <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      <p class="eyebrow">Completed Case Study</p>
+      <h1>Ubuntu Application Server Secure Baseline &amp; Recovery</h1>
+      <p class="case-lead">A Linux infrastructure-security project focused on preparing, hardening, validating, and snapshotting an Ubuntu 24.04 application server before the next cloud-security phase.</p>
+      <ul class="tag-list tag-list--large"><li>Ubuntu 24.04</li><li>Linux Hardening</li><li>UFW</li><li>OpenSSH</li><li>Netplan</li><li>Recovery</li></ul>
+      <div class="case-actions"><a class="button button--primary" href="../docs/Ubuntu_Secure_Baseline_Project_Report.pdf" target="_blank" rel="noreferrer">Open full report</a><a class="button button--secondary" href="../projects.html">View project archive</a></div>
+    </header>
+    <figure class="case-visual case-visual--ubuntu" aria-label="Animated visual for Ubuntu secure baseline">
+      <div class="case-visual__panel">
+        <div class="case-visual__topline">
+          <span class="case-visual__title">Ubuntu Baseline</span>
+          <span class="case-visual__ap">AP</span>
+        </div>
+        <span class="case-visual__divider"></span>
+        <span class="case-visual__bar case-visual__bar--one"></span>
+        <span class="case-visual__bar case-visual__bar--two"></span>
+        <span class="case-visual__bar case-visual__bar--three"></span>
+        <div class="case-visual__orbit"><span>UFW</span></div>
+        <div class="case-visual__nodes"><i>SSH</i><i>GRUB</i><i>NETPLAN</i></div>
+        <p>Linux Hardening • Firewall • Recovery • Validation</p>
+      </div>
+    </figure>
+    <div class="case-grid">
+      <section class="case-section"><h2>Objective</h2><p>Prepare <code>wcds-app-01</code> as a reliable and secure Ubuntu application-server foundation for later cloud-security and hybrid-lab work.</p></section>
+      <section class="case-section"><h2>Environment</h2><p>The lab used Ubuntu 24.04 LTS on VMware Workstation with ADC1 providing AD DS, DNS, and DHCP services, and VMnet8 providing NAT egress for controlled external reachability.</p></section>
+      <section class="case-section"><h2>Work performed</h2><p>Renamed and validated the host, corrected local resolution, repaired package repository trust, simulated and completed a large system upgrade, held Wazuh Manager to preserve scope, repaired GRUB, restricted SSH using UFW, hardened OpenSSH, enabled unattended upgrades, corrected Netplan, and reset failed service state.</p></section>
+      <section class="case-section"><h2>Recovery actions</h2><p>Recovered safely from a GRUB bootloader risk before rebooting, corrected a stale <code>ens33</code> Netplan definition to match the active <code>ens37</code> interface, and created VMware recovery snapshots at major change gates.</p></section>
+      <section class="case-section"><h2>Validation</h2><p>Validated hostname persistence, internal DNS, DHCP addressing, default route, Azure HTTPS reachability, kernel boot, package integrity, Wazuh preservation, UFW policy, SSH health, automatic updates, and zero failed systemd units.</p></section>
+      <section class="case-section"><h2>Outcome</h2><p>The server was transformed from a general-purpose Ubuntu VM into a documented, hardened, network-stable application-server baseline with recovery points and clear follow-up recommendations.</p></section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span data-year></span> Ayinde Perouza. IT Support & Cybersecurity Portfolio.</p>
+  <a href="#top" class="footer-top">Back to top</a>
+</footer>
+<button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+<script src="../js/index.js"></script>
+</body>
+</html>
