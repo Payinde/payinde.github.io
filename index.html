@@ -21,6 +21,7 @@
     <a href="index.html#about">About</a>
     <a href="index.html#skills">Skills</a>
     <a href="index.html#projects">Projects</a>
+    <a href="index.html#credentials">Credentials</a>
     <a href="index.html#platforms">Platforms</a>
     <a href="index.html#contact">Contact</a>
   </nav>
@@ -38,10 +39,10 @@
 <main id="main">
   <section class="hero section" id="home">
     <div class="hero__content">
-      <p class="eyebrow">IT Support • Cybersecurity • Cloud Security Growth</p>
-      <h1>Building practical skills in <span class="hero-rotate" data-roles="SOC Triage,DFIR Reporting,Threat Hunting,IAM Operations,Network Analysis,Cloud Security">SOC Triage</span></h1>
+      <p class="eyebrow">IT Operations • Cybersecurity Skills • Cloud Security Growth</p>
+      <h1>Building practical skills in <span class="hero-rotate" data-roles="Cybersecurity Operations,Enterprise IT and Systems Administration,Incident Response and Threat Detection,Identity and Endpoint Security,Cloud Security Engineering">Cybersecurity Operations</span></h1>
       <p class="hero__lead">
-        Practical, hands-on work across enterprise IT support, identity and access management, endpoint security operations, incident investigation, network traffic analysis, and cybersecurity lab reporting.
+        Practical, hands-on work across enterprise IT support, systems administration, identity and access management, endpoint security operations, incident investigation, network traffic analysis, and cybersecurity lab reporting.
       </p>
       <div class="hero__actions">
         <a class="button button--primary" href="#projects">View Projects</a>
@@ -111,48 +112,93 @@
   <section class="section projects" id="projects">
     <div class="section__heading section__heading--split">
       <div>
-        <p class="eyebrow">Projects</p>
-        <h2>Selected labs and cybersecurity write-ups.</h2>
-        <p class="section__intro">Project cards include status badges so completed work and in-progress work are clear.</p>
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Selected labs, case studies, and verified skill work.</h2>
+        <p class="section__intro">The homepage highlights the strongest work first. Use the dropdown arrows to expand details, or open the full project archive for the complete list.</p>
       </div>
-      <div class="project-filters" aria-label="Project filters">
-        <button class="filter-button is-active" type="button" data-filter="all">All</button>
-        <button class="filter-button" type="button" data-filter="completed">Completed</button>
-        <button class="filter-button" type="button" data-filter="in-progress">In Progress</button>
-      </div>
+      <a class="button button--secondary" href="projects.html">View All Projects</a>
     </div>
 
-    <div class="project-grid">
-      <article class="project-card project-card--featured" data-status="completed">
-        <img src="img/phantom-credential.jpg" alt="PHANTOM CTI CTF credential preview" class="project-card__image">
-        <div class="project-card__body">
-          <span class="status status--complete">Completed</span>
-          <h3>PHANTOM CTI CTF: Supply Chain Investigation</h3>
-          <p>Investigated a simulated npm supply-chain compromise affecting a GitHub Actions self-hosted runner, including IOC extraction, MITRE mapping, threat hunting, and detection logic.</p>
+    <div class="project-list project-list--featured">
+      <details class="project-card project-accordion" data-status="completed" open>
+        <summary class="project-summary">
+          <img src="img/phantom-credential.jpg" alt="PHANTOM CTI CTF credential preview" class="project-card__image">
+          <div class="project-summary__content">
+            <span class="status status--complete">Completed</span>
+            <h3>PHANTOM CTI CTF: Supply Chain Investigation</h3>
+            <p>Investigated a simulated npm supply-chain compromise affecting a GitHub Actions self-hosted runner, including IOC extraction, MITRE mapping, threat hunting, and detection logic.</p>
+          </div>
+        </summary>
+        <div class="project-card__body project-card__details">
+          <p>Built an evidence-based investigation narrative from package-lock changes, CI/CD logs, proxy evidence, GitHub audit activity, malware behavior, indicators of compromise, and remediation priorities.</p>
           <ul class="tag-list"><li>DFIR</li><li>Supply Chain</li><li>YARA</li><li>Sigma</li><li>Snort</li></ul>
           <div class="card-actions"><a href="projects/phantom-ctf.html">Read case study</a><a href="docs/PHANTOM_CTF_Enterprise_Investigation_Report_Ayinde_Perouza.pdf" target="_blank" rel="noreferrer">Open report</a></div>
         </div>
-      </article>
+      </details>
 
-      <article class="project-card project-card--featured" data-status="completed">
-        <img src="img/envelope-credential.jpg" alt="ENVELOPE DFIR credential preview" class="project-card__image">
-        <div class="project-card__body">
-          <span class="status status--complete">Completed</span>
-          <h3>ENVELOPE DFIR: Malware & Incident Response</h3>
-          <p>Documented a phishing-led Windows compromise involving PowerShell, persistence, DLL side-loading, live C2 interaction, credential material, and detection engineering.</p>
+      <details class="project-card project-accordion" data-status="completed">
+        <summary class="project-summary">
+          <img src="img/envelope-credential.jpg" alt="ENVELOPE DFIR credential preview" class="project-card__image">
+          <div class="project-summary__content">
+            <span class="status status--complete">Completed</span>
+            <h3>ENVELOPE DFIR: Malware &amp; Incident Response</h3>
+            <p>Documented a phishing-led Windows compromise involving PowerShell, persistence, DLL side-loading, live C2 interaction, credential material, and detection engineering.</p>
+          </div>
+        </summary>
+        <div class="project-card__body project-card__details">
+          <p>Reviewed Windows artifacts, decoded payload behavior, mapped persistence mechanisms, identified high-fidelity detection signals, and produced remediation recommendations for a lab incident scenario.</p>
           <ul class="tag-list"><li>DFIR</li><li>Malware Triage</li><li>PowerShell</li><li>YARA</li><li>Sigma</li></ul>
           <div class="card-actions"><a href="projects/envelope-dfir.html">Read case study</a><a href="docs/ENVELOPE_Report_CoverOnly_Dark_Sections_Paged.pdf" target="_blank" rel="noreferrer">Open report</a></div>
         </div>
-      </article>
+      </details>
 
-      <article class="project-card" data-status="completed"><img src="img/project-ad.svg" alt="Enterprise AD lab illustration" class="project-card__image"><div class="project-card__body"><span class="status status--complete">Completed</span><h3>Windows Enterprise Administration Lab</h3><p>Built and tested an Active Directory lab with two forests, DNS remediation, forest trust verification, delegated administration, and workstation login testing.</p><ul class="tag-list"><li>Windows Server</li><li>AD DS</li><li>DNS</li><li>GPO</li></ul><a href="projects/windows-enterprise-ad-lab.html">Read case study</a></div></article>
-      <article class="project-card" data-status="completed"><img src="img/project-soc.svg" alt="SOC triage lab illustration" class="project-card__image"><div class="project-card__body"><span class="status status--complete">Completed</span><h3>SOC Triage: Suspicious Download</h3><p>Reviewed suspicious double-extension activity, documented host/user details, assessed execution risk, and listed persistence and network checks.</p><ul class="tag-list"><li>Alert Triage</li><li>IOC Review</li><li>Defender</li><li>Escalation</li></ul><a href="projects/soc-triage-lab.html">Read case study</a></div></article>
-      <article class="project-card" data-status="completed"><img src="img/project-pcap.svg" alt="Network traffic analysis illustration" class="project-card__image"><div class="project-card__body"><span class="status status--complete">Completed</span><h3>Network Traffic Analysis</h3><p>Used Wireshark filters and protocol review to investigate DNS, HTTP, ICMP, user-agent strings, and peer-to-peer activity in PCAP exercises.</p><ul class="tag-list"><li>Wireshark</li><li>DNS</li><li>HTTP</li><li>TCP/IP</li></ul><a href="projects/network-traffic-analysis.html">Read case study</a></div></article>
-      <article class="project-card" data-status="completed"><img src="img/project-vm.svg" alt="Vulnerability management illustration" class="project-card__image"><div class="project-card__body"><span class="status status--complete">Completed</span><h3>Security Monitoring & Vulnerability Management Lab</h3><p>Practiced centralized logging, alert review, endpoint hardening, reporting, and attack surface reduction with Splunk/Security Onion concepts.</p><ul class="tag-list"><li>Splunk</li><li>Security Onion</li><li>Hardening</li><li>Reporting</li></ul><a href="projects/vulnerability-management.html">Read case study</a></div></article>
-      <article class="project-card" data-status="completed"><img src="img/project-iam.svg" alt="IAM operations lab illustration" class="project-card__image"><div class="project-card__body"><span class="status status--complete">Completed</span><h3>IAM Operations Lab</h3><p>Mapped service desk identity tasks to security outcomes, including lifecycle support, access groups, MFA support, and secure ticket documentation.</p><ul class="tag-list"><li>Entra ID</li><li>M365</li><li>Access Control</li><li>Tickets</li></ul><a href="projects/iam-operations-lab.html">Read case study</a></div></article>
-      <article class="project-card" data-status="in-progress"><img src="img/project-ot.svg" alt="IT OT segmentation illustration" class="project-card__image"><div class="project-card__body"><span class="status status--progress">In Progress</span><h3>IT/OT Segmentation Lab</h3><p>Planned separation of IT, OT, and DMZ networks with firewall rules, OpenPLC/Modbus simulation, and monitoring between segmented networks.</p><ul class="tag-list"><li>pfSense</li><li>Segmentation</li><li>Modbus</li><li>DMZ</li></ul><a href="projects/it-ot-segmentation.html">Read case study</a></div></article>
-      <article class="project-card" data-status="in-progress"><img src="img/project-cloud.svg" alt="Cloud security roadmap illustration" class="project-card__image"><div class="project-card__body"><span class="status status--progress">In Progress</span><h3>Cloud Security Engineer Learning Roadmap</h3><p>A near-future learning path focused on cloud security fundamentals, identity, logging, access control, and secure cloud operations.</p><ul class="tag-list"><li>Cloud Security</li><li>IAM</li><li>Logging</li><li>Roadmap</li></ul><a href="projects/cloud-security-roadmap.html">Read case study</a></div></article>
-      <article class="project-card" data-status="in-progress"><img src="img/project-portfolio.svg" alt="Portfolio rebuild project illustration" class="project-card__image"><div class="project-card__body"><span class="status status--progress">In Progress</span><h3>Cybersecurity Portfolio Rebuild</h3><p>Rebuilt an early front-end portfolio into a focused IT and cybersecurity portfolio with case studies, responsive layout, project filters, theme toggle, and animated UI elements.</p><ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Accessibility</li></ul><a href="projects/portfolio-rebuild.html">Read case study</a></div></article>
+      <details class="project-card project-accordion" data-status="completed">
+        <summary class="project-summary">
+          <img src="img/project-cdt.svg" alt="Cyber Defense Technician practical path illustration" class="project-card__image">
+          <div class="project-summary__content">
+            <span class="status status--complete">Completed</span>
+            <h3>Cyber Defense Technician Practical Path</h3>
+            <p>Summarized a hands-on Level Effect path covering Windows, Linux, networking, Active Directory, helpdesk ticket handling, evidence review, and the CDT scenario-based exam.</p>
+          </div>
+        </summary>
+        <div class="project-card__body project-card__details">
+          <p>This path connects IT operations fundamentals to the SOC Analyst Path by building practical Windows, Linux, network, Active Directory, troubleshooting, and evidence-based decision-making skills.</p>
+          <ul class="tag-list"><li>Windows</li><li>Linux</li><li>Networking</li><li>AD</li><li>Helpdesk</li></ul>
+          <div class="card-actions"><a href="projects/cdt-practical-path.html">Read case study</a><a href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer">View Skill Sheet</a></div>
+        </div>
+      </details>
+
+      <details class="project-card project-accordion" data-status="completed">
+        <summary class="project-summary">
+          <img src="img/project-ad.svg" alt="Enterprise AD lab illustration" class="project-card__image">
+          <div class="project-summary__content">
+            <span class="status status--complete">Completed</span>
+            <h3>Windows Enterprise Administration Lab</h3>
+            <p>Built and tested an Active Directory lab with two forests, DNS remediation, forest trust verification, delegated administration, and workstation login testing.</p>
+          </div>
+        </summary>
+        <div class="project-card__body project-card__details">
+          <p>Practiced Windows Server administration, AD DS, DNS, DHCP, GPOs, cross-forest trust validation, permissions, and troubleshooting in a simulated enterprise environment.</p>
+          <ul class="tag-list"><li>Windows Server</li><li>AD DS</li><li>DNS</li><li>GPO</li></ul>
+          <div class="card-actions"><a href="projects/windows-enterprise-ad-lab.html">Read case study</a></div>
+        </div>
+      </details>
+
+      <details class="project-card project-accordion" data-status="in-progress">
+        <summary class="project-summary">
+          <img src="img/project-portfolio.svg" alt="Portfolio rebuild project illustration" class="project-card__image">
+          <div class="project-summary__content">
+            <span class="status status--portfolio">In Progress</span>
+            <h3>Cybersecurity Portfolio Rebuild</h3>
+            <p>Rebuilt an early front-end portfolio into a focused IT and cybersecurity portfolio with case studies, responsive layout, project archive, theme toggle, and animated UI elements.</p>
+          </div>
+        </summary>
+        <div class="project-card__body project-card__details">
+          <p>Turned the portfolio itself into a documented project covering content strategy, responsive front-end design, accessibility, dark/light mode, collapsible project cards, and public-safe presentation.</p>
+          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Accessibility</li></ul>
+          <div class="card-actions"><a href="projects/portfolio-rebuild.html">Read case study</a></div>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -162,6 +208,7 @@
       <h2>Current development across cybersecurity, networking, and IT operations.</h2>
     </div>
     <div class="cert-grid">
+      <article><h3>Cyber Defense Technician (CDT)</h3><p>Level Effect Guardian Foundry credential covering Windows, Linux, networking fundamentals, system administration, Active Directory, helpdesk ticket handling, and evidence-based exam scenarios.</p><a class="text-link" href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer">View verified skill sheet</a></article>
       <article><h3>CompTIA CySA+ Study</h3><p>Security analytics, vulnerability management, incident response, and reporting practice.</p></article>
       <article><h3>Fortinet Certified Associate in Cybersecurity</h3><p>Security awareness and Fortinet ecosystem fundamentals.</p></article>
       <article><h3>Google Cybersecurity Professional Certificate</h3><p>Security operations, SIEM concepts, Linux, SQL, Python basics, and incident response fundamentals.</p></article>
@@ -177,7 +224,7 @@
       <h2>Places where I continue learning, practicing, and building evidence.</h2>
     </div>
     <div class="platform-grid">
-      <a class="platform-card" href="https://foundry.leveleffect.com/" target="_blank" rel="noreferrer"><strong>Level Effect / Guardian Foundry</strong><span>Cybersecurity CTFs, badges, and verified portfolio work.</span></a>
+      <a class="platform-card" href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer"><strong>Level Effect / Guardian Foundry</strong><span>Guardian Foundry badge and verified skill-sheet record.</span></a>
       <a class="platform-card" href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer"><strong>Level Effect Skill Sheet</strong><span>Badge and skills record for completed Guardian Foundry work.</span></a>
       <a class="platform-card" href="https://tryhackme.com/" target="_blank" rel="noreferrer"><strong>TryHackMe</strong><span>Hands-on cybersecurity practice and learning rooms.</span></a>
       <a class="platform-card" href="https://www.stationx.net/" target="_blank" rel="noreferrer"><strong>StationX</strong><span>Cybersecurity training and skills development.</span></a>

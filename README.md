@@ -27,3 +27,12 @@ If you prefer to keep dated resume versions, place the new PDF in `docs/` and up
 ## Publishing notes
 
 This site can be published with GitHub Pages, Netlify, Cloudflare Pages, or any basic static hosting platform.
+
+## Latest update
+
+- Tightened section spacing for a shorter, cleaner page flow.
+- Updated the hero rotation to show skill areas being built instead of job-title confusion.
+- Added collapsible project dropdown cards on the homepage.
+- Added `projects.html` as the full project archive for long-term growth.
+- Added the Cyber Defense Technician practical path summary and verified Skill Sheet link.
+- Updated Level Effect / Guardian Foundry links to point to the verified Skill Sheet.

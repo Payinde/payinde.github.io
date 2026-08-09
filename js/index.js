@@ -100,6 +100,15 @@ if (feed) {
 
 const filterButtons = document.querySelectorAll('[data-filter]');
 const projectCards = document.querySelectorAll('.project-card[data-status]');
+const projectAccordions = document.querySelectorAll('.project-accordion');
+projectAccordions.forEach(card => {
+  card.addEventListener('toggle', () => {
+    if (!card.open) return;
+    projectAccordions.forEach(other => {
+      if (other !== card && other.closest('main') === card.closest('main')) other.open = false;
+    });
+  });
+});
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     const filter = button.dataset.filter;
@@ -107,6 +116,7 @@ filterButtons.forEach(button => {
     projectCards.forEach(card => {
       const show = filter === 'all' || card.dataset.status === filter;
       card.classList.toggle('is-hidden', !show);
+      if (!show && card.open) card.open = false;
     });
   });
 });
