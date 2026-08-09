@@ -45,36 +45,22 @@ navLinks.forEach(link => link.addEventListener('click', () => {
 const rotating = document.querySelector('.hero-rotate');
 if (rotating) {
   const phrases = rotating.dataset.roles.split(',').map(v => v.trim()).filter(Boolean);
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   const longest = Math.max(...phrases.map(v => v.length), rotating.textContent.length);
   rotating.style.setProperty('--role-width', `${longest}ch`);
   rotating.setAttribute('aria-live', 'polite');
+
   let index = 0;
-  const scrambleTo = (text) => {
-    let frame = 0;
-    const max = 8;
+  const rotatePhrase = () => {
     rotating.classList.add('is-changing');
-    const tick = () => {
-      const progress = frame / max;
-      const out = text.split('').map((char, i) => {
-        if (char === ' ') return ' ';
-        if (i < Math.floor(progress * text.length)) return char;
-        return chars[Math.floor(Math.random() * chars.length)];
-      }).join('');
-      rotating.textContent = out;
-      frame += 1;
-      if (frame <= max) requestAnimationFrame(tick);
-      else {
-        rotating.textContent = text;
-        rotating.classList.remove('is-changing');
-      }
-    };
-    tick();
+
+    window.setTimeout(() => {
+      index = (index + 1) % phrases.length;
+      rotating.textContent = phrases[index];
+      rotating.classList.remove('is-changing');
+    }, 520);
   };
-  setInterval(() => {
-    index = (index + 1) % phrases.length;
-    scrambleTo(phrases[index]);
-  }, 3600);
+
+  window.setInterval(rotatePhrase, 4200);
 }
 
 const feed = document.querySelector('[data-feed]');
