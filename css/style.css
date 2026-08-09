@@ -121,6 +121,9 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
 .project-card--featured { grid-column: span 1; }
 .project-card__image { aspect-ratio: 16 / 10; width:100%; height: auto; object-fit:cover; background:var(--card-2); border-bottom:1px solid var(--line); transition: transform .3s ease, filter .3s ease; }
 .project-card:hover .project-card__image { transform: scale(1.025); filter:saturate(1.1); }
+.project-card__image--contain { object-fit: contain; padding: .65rem; background: var(--card-2); }
+.project-summary .project-card__image--contain { object-fit: contain; padding: .45rem; background: var(--card-2); }
+.case-image--credential img { object-fit: contain; background: #f7f3ea; }
 .project-card__body { padding:1.05rem; flex:1; display:flex; flex-direction:column; }
 .project-card__body p { flex:1; }
 .project-card a:not(.button) { color:var(--accent); font-weight:900; text-decoration:none; }
