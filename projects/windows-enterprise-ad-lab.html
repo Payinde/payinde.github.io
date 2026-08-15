@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0b1220" data-theme-color>
   <link rel="icon" href="../img/ap-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css">
-  <title>Windows Enterprise AD Lab | Ayinde Perouza Portfolio</title>
-  <meta name="description" content="A home enterprise lab focused on Active Directory, DNS, forest trusts, delegated administration, workstation authentication, and baseline security controls.">
+  <title>Windows Enterprise Administration & AD Security Lab | Ayinde Perouza Portfolio</title>
+  <meta name="description" content="A consolidated Windows enterprise administration and Active Directory security lab covering AD DS, DNS/DHCP, Group Policy, forest trusts, delegated administration, file services recovery, PowerShell, and security validation.">
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -40,27 +40,77 @@
     <header class="case-hero">
       <a class="back-link" href="../index.html#projects">← Back to projects</a>
       <p class="eyebrow">Completed Case Study</p>
-      <h1>Windows Enterprise Administration & Security Lab</h1>
-      <p class="case-lead">A home enterprise lab focused on Active Directory, DNS, forest trusts, delegated administration, workstation authentication, and baseline security controls.</p>
-      <ul class="tag-list tag-list--large"><li>Active Directory</li><li>DNS</li><li>GPO</li><li>Windows Server</li><li>IAM</li></ul>
-      
+      <h1>Windows Enterprise Administration & Active Directory Security Lab</h1>
+      <p class="case-lead">A consolidated Windows enterprise administration lab focused on Active Directory, DNS/DHCP, Group Policy, forest trusts, delegated administration, SMB/NTFS permissions, file recovery, PowerShell troubleshooting, and security validation.</p>
+      <ul class="tag-list tag-list--large"><li>Windows Server</li><li>Active Directory</li><li>DNS/DHCP</li><li>Group Policy</li><li>Forest Trusts</li><li>PowerShell</li></ul>
+      <div class="case-actions">
+        <a class="button button--primary" href="../docs/Windows_Enterprise_Administration_AD_Security_Lab_Report.pdf" target="_blank" rel="noreferrer">Open full report</a>
+        <a class="button button--secondary" href="../projects.html">View project archive</a>
+      </div>
     </header>
-    <figure class="case-visual case-visual--ad" aria-label="Animated visual for Enterprise AD Lab">
-  <div class="case-visual__panel">
-    <div class="case-visual__topline">
-      <span class="case-visual__title">Enterprise AD Lab</span>
-      <span class="case-visual__ap">AP</span>
+
+    <figure class="case-visual case-visual--ad" aria-label="Animated visual for Windows Enterprise Administration and Active Directory Security Lab">
+      <div class="case-visual__panel">
+        <div class="case-visual__topline">
+          <span class="case-visual__title">Enterprise AD Lab</span>
+          <span class="case-visual__ap">AP</span>
+        </div>
+        <span class="case-visual__divider"></span>
+        <span class="case-visual__bar case-visual__bar--one"></span>
+        <span class="case-visual__bar case-visual__bar--two"></span>
+        <span class="case-visual__bar case-visual__bar--three"></span>
+        <div class="case-visual__orbit"><span>AP</span></div>
+        <div class="case-visual__nodes"><i>ADC1</i><i>ADC2</i><i>DNS</i><i>GPO</i><i>TRUST</i></div>
+        <p>AD DS • DNS/DHCP • Forest Trusts • Delegation • Recovery</p>
+      </div>
+    </figure>
+
+    <div class="case-grid">
+      <section class="case-section">
+        <h2>Project scope</h2>
+        <p>This case study consolidates multiple hands-on Windows administration exercises into one portfolio-ready lab: Active Directory domain services, DNS/DHCP, Windows clients, Group Policy, identity and access administration, file services, PowerShell, and security-focused validation.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Environment</h2>
+        <p>The core lab used independent TT.WI.LOCAL and BB.WI.LOCAL Active Directory forests on the 10.1.10.0/24 VMware lab network. ADC1 provided AD DS, DNS, and DHCP for TT.WI.LOCAL, while ADC2 hosted BB.WI.LOCAL for cross-forest DNS and trust testing.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Active Directory and Group Policy</h2>
+        <p>Built and administered domain services, users, groups, OUs, Windows workstations, Group Policy links, remote logon controls, folder redirection, and endpoint restrictions. Policy application was validated with gpupdate, gpresult, and RSOP.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>DNS, DHCP, and forest trust</h2>
+        <p>Remediated DNS issues affecting cross-forest name resolution, configured conditional forwarders between forests, validated SRV/PTR records, and created a two-way transitive forest trust after reliable DNS resolution was established.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Least-privilege delegation</h2>
+        <p>Included a separate GOODCORP.LOCAL challenge to delegate helpdesk rights only within the UserAccounts OU. The group could create user accounts and reset passwords without deletion, ACL ownership, or domain-wide administrative authority.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>File services and recovery</h2>
+        <p>Practiced SMB and NTFS permission administration, folder redirection, and a Previous Versions / Volume Shadow Copy recovery workflow. Recovery was verified with controlled restore steps and hash validation rather than assuming the file was correct because it reappeared.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>PowerShell and tooling</h2>
+        <p>Used PowerShell and native Windows tools for AD administration, DNS validation, trust checks, ACL review, service remediation, firewall inspection, file recovery validation, event review, and ticket-quality evidence collection.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Security operations bridge</h2>
+        <p>Extended the administration lab with Sysmon and Windows event telemetry to connect system administration knowledge with security monitoring. The lab reinforces the progression from administering systems correctly to understanding normal behavior and investigating deviations.</p>
+      </section>
     </div>
-    <span class="case-visual__divider"></span>
-    <span class="case-visual__bar case-visual__bar--one"></span>
-    <span class="case-visual__bar case-visual__bar--two"></span>
-    <span class="case-visual__bar case-visual__bar--three"></span>
-    <div class="case-visual__orbit"><span>AP</span></div>
-    <div class="case-visual__nodes"><i>DC1</i><i>DNS</i><i>TRUST</i></div>
-    <p>Windows Server • DNS • Trusts • IAM</p>
-  </div>
-</figure>
-    <div class="case-grid"><section class="case-section"><h2>Objective</h2><p>Build a realistic Windows domain lab to practice administration, authentication, DNS troubleshooting, access delegation, and policy enforcement.</p></section><section class="case-section"><h2>Work performed</h2><p>Configured Windows Server domain services, client workstations, user/group management, DNS records, forest trust validation, conditional forwarders, logon testing, and Group Policy controls.</p></section><section class="case-section"><h2>Skills demonstrated</h2><p>AD DS, DNS/DHCP concepts, Group Policy, Windows Server administration, PowerShell validation, access control, and troubleshooting documentation.</p></section><section class="case-section"><h2>Outcome</h2><p>Created a stronger foundation for systems administration and identity/security support by validating domain trust behavior, name resolution, logon permissions, and helpdesk delegation.</p></section></div>
+
+    <section class="case-section" style="margin-top:1rem;">
+      <h2>Outcome and lessons learned</h2>
+      <p>The completed lab demonstrates practical Windows administration with security-aware decision making: build the environment, apply controls, troubleshoot real failures, validate the result, and document the reasoning. Key lessons include validating DNS before trust configuration, separating authentication from authorization, using precise delegation scopes, and documenting symptoms, evidence, fixes, and validation as reusable operational runbooks.</p>
+    </section>
   </article>
 </main>
 

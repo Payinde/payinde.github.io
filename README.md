@@ -50,3 +50,8 @@ This site can be published with GitHub Pages, Netlify, Cloudflare Pages, or any 
 - Added Ubuntu Application Server Secure Baseline & Recovery project and case study.
 - Updated Cybersecurity Portfolio Rebuild from In Progress to Completed.
 - Refined homepage professional summary wording.
+
+
+## Latest Windows Enterprise AD Update
+
+Added the consolidated Windows Enterprise Administration & Active Directory Security Lab report and expanded the Windows Enterprise case-study page with AD DS, DNS/DHCP, Group Policy, forest trust, helpdesk delegation, file recovery, PowerShell, troubleshooting, and security monitoring content.
