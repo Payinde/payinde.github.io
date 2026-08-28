@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ayinde Perouza">
+  <meta name="theme-color" content="#0b1220" data-theme-color>
+  <link rel="icon" href="../img/ap-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Build a SOC Lab with Wazuh | AI-Assisted SOC Triage</title>
+  <meta name="description" content="A portfolio case study documenting a Wazuh SOC lab with Windows/Linux telemetry, FIM, custom rules, Active Response, and a local AI-assisted triage workflow.">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" data-header>
+  <a class="brand" href="../index.html#home" aria-label="Ayinde Perouza home">
+    <img src="../img/ap-logo.svg" alt="" class="brand__mark" width="44" height="44">
+    <span class="brand__text">Ayinde Perouza</span>
+  </a>
+  <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#platforms">Platforms</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+      <span class="theme-toggle__icon" data-theme-icon aria-hidden="true">🌙</span>
+      <span class="theme-toggle__text" data-theme-label>Dark</span>
+    </button>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <article class="case-study" id="top">
+    <header class="case-hero">
+      <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      <p class="eyebrow">Completed Case Study</p>
+      <h1>Build a SOC Lab with Wazuh | AI-Assisted SOC Triage</h1>
+      <p class="case-lead">A SOC engineering case study that starts with Wazuh monitoring, Windows/Linux endpoint telemetry, File Integrity Monitoring, custom rules and Active Response, then extends the workflow with local AI-assisted Tier 1 triage under deterministic policy control and human oversight.</p>
+      <ul class="tag-list tag-list--large"><li>Wazuh</li><li>Windows/Linux Telemetry</li><li>FIM</li><li>Detection Engineering</li><li>Active Response</li><li>AI Triage</li></ul>
+      <div class="case-actions"><a class="button button--primary" href="../docs/Build_a_SOC_Lab_with_Wazuh_AI_Assisted_SOC_Triage_Report.pdf" target="_blank" rel="noreferrer">Open full report</a><a class="button button--secondary" href="https://github.com/Payinde/Build-a-SOC-Lab-with-Wazuh" target="_blank" rel="noreferrer">View GitHub</a><a class="button button--secondary" href="../projects.html">View project archive</a></div>
+    </header>
+
+    <figure class="case-visual case-visual--wazuh" aria-label="Animated visual for Wazuh SOC lab and AI-assisted triage">
+      <div class="case-visual__panel">
+        <div class="case-visual__topline">
+          <span class="case-visual__title">Wazuh SOC Lab</span>
+          <span class="case-visual__ap">AI</span>
+        </div>
+        <span class="case-visual__divider"></span>
+        <span class="case-visual__bar case-visual__bar--one"></span>
+        <span class="case-visual__bar case-visual__bar--two"></span>
+        <span class="case-visual__bar case-visual__bar--three"></span>
+        <div class="case-visual__orbit"><span>Wazuh</span></div>
+        <div class="case-visual__nodes"><i>FIM</i><i>Rules</i><i>Active Response</i><i>Policy Engine</i><i>Human Review</i></div>
+        <p>Telemetry • Detection Engineering • Local AI • Validation</p>
+      </div>
+    </figure>
+
+    <div class="case-grid">
+      <section class="case-section"><h2>Objective</h2><p>Build a beginner-friendly SOC lab using Wazuh, validate telemetry from Windows and Linux endpoints, create analyst-focused dashboards and detections, then document an investigation workflow with evidence, findings, 5W1H analysis and recommendations.</p></section>
+      <section class="case-section"><h2>Environment</h2><p>The lab used VMware Workstation / VMnet8 on <code>10.1.10.0/24</code>, a dedicated Wazuh server at <code>10.1.10.50</code>, a Windows endpoint with Wazuh Agent and Sysmon, a Linux endpoint with Wazuh Agent, Linux Sysmon, SSH and FIM, plus a local Ubuntu host later reused for Ollama/Qwen AI testing.</p></section>
+      <section class="case-section"><h2>Wazuh implementation</h2><p>Deployed Wazuh as the central collection and analysis platform, enrolled Windows and Linux agents, validated event communication and enrollment, enabled archives, integrated Sysmon telemetry and built custom SOC dashboard views for severity, account-management and SSH activity.</p></section>
+      <section class="case-section"><h2>Detection engineering</h2><p>Created and tested custom Wazuh rules for Windows Guest account enablement, Remote Desktop Users membership changes and repeated SSH login failures. The SSH correlation rule triggered Active Response using firewall-drop against the source of repeated authentication failures.</p></section>
+      <section class="case-section"><h2>AI-assisted extension</h2><p>Extended the project with a local AI-assisted triage pipeline using Ollama, Qwen 2.5, structured JSON test cases, human ground truth, a SOC playbook, Python policy engine, output validator, evaluator and benchmark summary.</p></section>
+      <section class="case-section"><h2>Outcome</h2><p>The final model keeps authority separated: Wazuh detects, Python enforces known facts, AI explains and recommends, and the human analyst remains the final decision authority. The project demonstrates SOC lab engineering, incident investigation, detection validation, automation and AI governance.</p></section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span data-year></span> Ayinde Perouza. IT Support & Cybersecurity Portfolio.</p>
+  <a href="#top" class="footer-top">Back to top</a>
+</footer>
+<button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+<script src="../js/index.js"></script>
+</body>
+</html>

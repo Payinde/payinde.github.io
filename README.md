@@ -55,3 +55,9 @@ This site can be published with GitHub Pages, Netlify, Cloudflare Pages, or any 
 ## Latest Windows Enterprise AD Update
 
 Added the consolidated Windows Enterprise Administration & Active Directory Security Lab report and expanded the Windows Enterprise case-study page with AD DS, DNS/DHCP, Group Policy, forest trust, helpdesk delegation, file recovery, PowerShell, troubleshooting, and security monitoring content.
+
+
+## Latest project added
+- `projects/wazuh-ai-soc-triage.html` — Build a SOC Lab with Wazuh | AI-Assisted SOC Triage.
+- `docs/Build_a_SOC_Lab_with_Wazuh_AI_Assisted_SOC_Triage_Report.pdf` — supporting portfolio report.
+- `img/project-wazuh.svg` — project card illustration.

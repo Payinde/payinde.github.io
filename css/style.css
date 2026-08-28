@@ -199,6 +199,7 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
 .case-visual--portfolio { --accent:#22d3ee; --accent-2:#8b5cf6; }
 .case-visual--cdt { --accent:#34d399; --accent-2:#22d3ee; }
 .case-visual--ubuntu { --accent:#f97316; --accent-2:#22d3ee; }
+.case-visual--wazuh { --accent:#22d3ee; --accent-2:#3b82f6; }
 @keyframes scan { 0% { transform:translateX(-120%); } 46%,100% { transform:translateX(240%); } }
 @keyframes orbitPulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.05); } }
 @keyframes rotateOrbit { to { transform:rotate(360deg); } }

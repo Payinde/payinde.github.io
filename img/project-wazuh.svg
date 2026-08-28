@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Wazuh SOC lab and AI-assisted triage illustration</title>
+  <desc id="desc">A Wazuh monitoring platform connected to Windows, Linux, Python policy engine, local AI and human analyst workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="900" height="560" rx="36" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#94a3b8" stroke-width="1">
+    <path d="M70 90H830M70 190H830M70 290H830M70 390H830"/>
+  </g>
+  <text x="70" y="86" font-family="Inter, Segoe UI, Arial" font-size="40" fill="#e5f3ff" font-weight="800">Wazuh SOC Lab</text>
+  <text x="70" y="128" font-family="Inter, Segoe UI, Arial" font-size="22" fill="#bae6fd">AI-Assisted SOC Triage • Human Oversight</text>
+  <g filter="url(#shadow)">
+    <rect x="95" y="185" width="185" height="116" rx="22" fill="#172554" stroke="#38bdf8" stroke-width="2"/>
+    <text x="188" y="234" font-family="Inter, Segoe UI, Arial" font-size="26" text-anchor="middle" fill="#ffffff" font-weight="800">Windows</text>
+    <text x="188" y="266" font-family="Inter, Segoe UI, Arial" font-size="18" text-anchor="middle" fill="#bae6fd">Sysmon + Agent</text>
+    <rect x="95" y="340" width="185" height="116" rx="22" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
+    <text x="188" y="389" font-family="Inter, Segoe UI, Arial" font-size="26" text-anchor="middle" fill="#ffffff" font-weight="800">Linux</text>
+    <text x="188" y="421" font-family="Inter, Segoe UI, Arial" font-size="18" text-anchor="middle" fill="#bbf7d0">FIM + SSH</text>
+    <circle cx="456" cy="286" r="92" fill="#0f172a" stroke="url(#accent)" stroke-width="12"/>
+    <text x="456" y="274" font-family="Inter, Segoe UI, Arial" font-size="34" text-anchor="middle" fill="#ffffff" font-weight="900">WAZUH</text>
+    <text x="456" y="311" font-family="Inter, Segoe UI, Arial" font-size="18" text-anchor="middle" fill="#bae6fd">Detect • Correlate • Respond</text>
+    <rect x="626" y="164" width="206" height="80" rx="18" fill="#1e1b4b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="729" y="199" font-family="Inter, Segoe UI, Arial" font-size="22" text-anchor="middle" fill="#ffffff" font-weight="800">Python Policy</text>
+    <text x="729" y="224" font-family="Inter, Segoe UI, Arial" font-size="15" text-anchor="middle" fill="#ddd6fe">Risk + Known Facts</text>
+    <rect x="626" y="270" width="206" height="80" rx="18" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <text x="729" y="305" font-family="Inter, Segoe UI, Arial" font-size="22" text-anchor="middle" fill="#ffffff" font-weight="800">Local AI</text>
+    <text x="729" y="330" font-family="Inter, Segoe UI, Arial" font-size="15" text-anchor="middle" fill="#c7d2fe">Ollama + Qwen</text>
+    <rect x="626" y="376" width="206" height="80" rx="18" fill="#0c4a6e" stroke="#22d3ee" stroke-width="2"/>
+    <text x="729" y="410" font-family="Inter, Segoe UI, Arial" font-size="22" text-anchor="middle" fill="#ffffff" font-weight="800">Human Analyst</text>
+    <text x="729" y="435" font-family="Inter, Segoe UI, Arial" font-size="15" text-anchor="middle" fill="#bae6fd">Final Authority</text>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12">
+    <path d="M280 244 C340 244 350 270 368 286"/>
+    <path d="M280 398 C340 398 350 318 368 286"/>
+    <path d="M548 286 C580 286 594 204 626 204"/>
+    <path d="M548 286 C584 286 592 310 626 310"/>
+    <path d="M548 286 C585 286 592 416 626 416"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial" font-size="17" font-weight="700">
+    <text x="70" y="505" fill="#bae6fd">Windows/Linux telemetry • FIM • custom rules • Active Response • policy validation • AI triage</text>
+  </g>
+</svg>
