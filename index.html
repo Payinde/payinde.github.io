@@ -23,7 +23,7 @@
     <a href="index.html#projects">Projects</a>
     <a href="index.html#credentials">Credentials</a>
     <a href="index.html#platforms">Platforms</a>
-    <a href="index.html#contact">Contact</a>
+    <a class="nav-cta" href="index.html#contact">Let’s Connect</a>
   </nav>
   <div class="header-actions">
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
@@ -46,6 +46,7 @@
       </p>
       <div class="hero__actions">
         <a class="button button--primary" href="#projects">View Projects</a>
+        <a class="button button--secondary" href="#contact">Let’s Connect</a>
         <a class="button button--secondary" href="docs/Ayinde_Perouza_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
       </div>
       <div class="terminal-feed" aria-label="Animated cybersecurity activity feed">
@@ -76,23 +77,32 @@
       <p class="eyebrow">About</p>
       <h2>Practical IT operations experience with a strong cybersecurity direction.</h2>
     </div>
-    <div class="about__grid">
-      <p>
-        An adaptable, hands-on individual with experience supporting enterprise users across multiple business units in fast-paced, SLA-driven environments. Demonstrates strong troubleshooting, analytical thinking, communication, and problem-solving abilities, with a focus on reliable service delivery, secure IT operations, and continuous professional development.
-      </p>
-      <p>
-        My cybersecurity focus is built through hands-on labs, CTF investigations, packet analysis, Windows incident response, detection logic, and security documentation. I focus on validating evidence, explaining findings clearly, and connecting technical activity to business risk.
-      </p>
-      <p>
-        This portfolio is a working record of my growth toward cybersecurity operations, infrastructure security, and future cloud security engineering work.
-      </p>
+    <div class="about-panel">
+      <div class="about-panel__main">
+        <p>
+          I bring practical experience supporting enterprise users across multiple business units in fast-paced, SLA-driven environments, with a focus on reliable service delivery, secure operations, clear documentation, and continuous professional development.
+        </p>
+        <p>
+          My cybersecurity growth is built through hands-on labs, CTF investigations, packet analysis, Windows and Linux administration, detection logic, and evidence-based reporting. I focus on validating findings, documenting what happened, and connecting technical activity to business risk.
+        </p>
+      </div>
+
+      <aside class="about-focus" aria-label="Current professional focus">
+        <h3>Current focus</h3>
+        <p>Cybersecurity operations supported by enterprise IT, systems administration, identity, endpoint, and cloud-security fundamentals.</p>
+        <div class="focus-tags" aria-label="Focus tags">
+          <span>SOC Triage</span>
+          <span>Systems Administration</span>
+          <span>Identity & Access</span>
+          <span>Cloud Security Growth</span>
+        </div>
+      </aside>
     </div>
 
-    <div class="quick-facts" aria-label="Professional focus areas">
-      <article><strong>01</strong><span>Identity, access, and Microsoft 365 support</span></article>
-      <article><strong>02</strong><span>Endpoint security, Defender, and escalation notes</span></article>
-      <article><strong>03</strong><span>SOC triage, IOCs, DFIR, and PCAP analysis</span></article>
-      <article><strong>04</strong><span>Clear documentation for technical and business readers</span></article>
+    <div class="quick-facts quick-facts--simple" aria-label="Professional strengths">
+      <article><strong>01</strong><span>Enterprise support and secure ticket documentation</span></article>
+      <article><strong>02</strong><span>Evidence-led troubleshooting and incident notes</span></article>
+      <article><strong>03</strong><span>Hands-on labs converted into portfolio case studies</span></article>
     </div>
   </section>
 
@@ -101,11 +111,23 @@
       <p class="eyebrow">Core Skills</p>
       <h2>Skills aligned to IT operations, security operations, and infrastructure support.</h2>
     </div>
-    <div class="skill-grid">
-      <article class="skill-card"><h3>Security Operations</h3><ul><li>SOC triage and alert review</li><li>IOC identification and documentation</li><li>MITRE ATT&CK mapping</li><li>Incident notes, escalation, containment thinking</li></ul></article>
-      <article class="skill-card"><h3>Identity & Infrastructure</h3><ul><li>Active Directory, DNS, DHCP, Group Policy</li><li>Microsoft Entra ID and Microsoft 365 administration</li><li>Onboarding/offboarding and access control</li><li>Least privilege and secure ticket handling</li></ul></article>
-      <article class="skill-card"><h3>Network & Traffic Analysis</h3><ul><li>Wireshark and PCAP review</li><li>HTTP, DNS, ICMP, TCP/IP analysis</li><li>Nmap and enumeration basics</li><li>Firewall, VPN, and segmentation concepts</li></ul></article>
-      <article class="skill-card"><h3>Tools & Platforms</h3><ul><li>Microsoft Defender, Fortinet, antivirus tools</li><li>Security Onion, Elastic, Splunk fundamentals</li><li>PowerShell, Linux CLI, VMware Workstation</li><li>YARA, Sigma, Snort-style detection logic</li></ul></article>
+    <div class="skill-list" aria-label="Grouped technical skills">
+      <article class="skill-row">
+        <h3>Cybersecurity Operations</h3>
+        <p>Alert review, SOC triage, IOC documentation, MITRE ATT&CK mapping, escalation notes, and evidence-based reporting.</p>
+      </article>
+      <article class="skill-row">
+        <h3>Systems, Identity & Access</h3>
+        <p>Windows Server, Linux administration, Active Directory, DNS/DHCP, Group Policy, Microsoft Entra ID, Microsoft 365, onboarding/offboarding, and least-privilege support.</p>
+      </article>
+      <article class="skill-row">
+        <h3>Endpoint, Network & Traffic Analysis</h3>
+        <p>Microsoft Defender, endpoint security review, Wireshark, PCAP analysis, TCP/IP, DNS/HTTP investigation, firewall concepts, VPN concepts, and segmentation awareness.</p>
+      </article>
+      <article class="skill-row">
+        <h3>Security Tools & Documentation</h3>
+        <p>Wazuh, Splunk, Security Onion, Elastic/Kibana, PowerShell, Linux CLI, VMware Workstation, YARA/Sigma/Snort-style logic, technical reports, and case-study documentation.</p>
+      </article>
     </div>
   </section>
 
@@ -271,10 +293,11 @@
   <section class="section contact" id="contact">
     <div class="contact-card">
       <p class="eyebrow">Contact</p>
-      <h2>Let’s connect.</h2>
-      <p>My areas of interest in cybersecurity, IT security support, SOC, infrastructure security and Cloud Security opportunities where I can combine support experience with practical security analysis and documentation.</p>
+      <h2>Let’s Connect</h2>
+      <p class="contact-card__intro">Interested in discussing IT support, cybersecurity projects, SOC work, infrastructure security, cloud-security growth, or collaboration opportunities?</p>
+      <p class="contact-card__note">I’m open to connecting with teams, mentors, recruiters, and peers who value practical technical work, clear documentation, and continuous development.</p>
       <div class="contact-actions">
-        <a class="button button--primary" href="mailto:ayinde.perouza@gmail.com">Email Ayinde</a>
+        <a class="button button--primary" href="mailto:ayinde.perouza@gmail.com">Email Me</a>
         <a class="button button--secondary" href="https://www.linkedin.com/in/ayinde-perouza" target="_blank" rel="noreferrer">LinkedIn</a>
         <a class="button button--secondary" href="https://github.com/Payinde" target="_blank" rel="noreferrer">GitHub</a>
         <a class="button button--secondary" href="docs/Ayinde_Perouza_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
@@ -287,6 +310,7 @@
   <p>&copy; <span data-year></span> Ayinde Perouza. IT Support & Cybersecurity Portfolio.</p>
   <a href="#top" class="footer-top">Back to top</a>
 </footer>
+<a class="floating-contact" href="#contact" aria-label="Jump to contact section">Let’s Connect</a>
 <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
 <script src="js/index.js"></script>
 </body>

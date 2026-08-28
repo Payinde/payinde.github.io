@@ -61,3 +61,9 @@ Added the consolidated Windows Enterprise Administration & Active Directory Secu
 - `projects/wazuh-ai-soc-triage.html` — Build a SOC Lab with Wazuh | AI-Assisted SOC Triage.
 - `docs/Build_a_SOC_Lab_with_Wazuh_AI_Assisted_SOC_Triage_Report.pdf` — supporting portfolio report.
 - `img/project-wazuh.svg` — project card illustration.
+
+## UX and contact refinement
+- Simplified the About section into a calmer reading layout with one main summary panel and one current-focus panel.
+- Reworked Core Skills into grouped skill rows for easier scanning.
+- Added stronger Let’s Connect calls to action in the hero, navigation, floating shortcut, and contact section.
+- Added a persistent floating contact shortcut across homepage, project archive, and case-study pages.
