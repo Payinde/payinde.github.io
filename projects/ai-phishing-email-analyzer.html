@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ayinde Perouza">
+  <meta name="theme-color" content="#0b1220" data-theme-color>
+  <link rel="icon" href="../img/ap-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>AI Phishing Email Analyzer | Ayinde Perouza Portfolio</title>
+  <meta name="description" content="A portfolio case study documenting a rule-based phishing email analyzer with Streamlit, local Ollama explanations, AI guardrails, automated tests, and JSON reporting.">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" data-header>
+  <a class="brand" href="../index.html#home" aria-label="Ayinde Perouza home"><img src="../img/ap-logo.svg" alt="" class="brand__mark" width="44" height="44"><span class="brand__text">Ayinde Perouza</span></a>
+  <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+    <a href="../index.html#about">About</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Projects</a><a href="../index.html#platforms">Platforms</a><a class="nav-cta" href="../index.html#contact">Let’s Connect</a>
+  </nav>
+  <div class="header-actions"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"><span class="theme-toggle__icon" data-theme-icon aria-hidden="true">🌙</span><span class="theme-toggle__text" data-theme-label>Dark</span></button><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button></div>
+</header>
+
+<main id="main">
+  <article class="case-study">
+    <header class="case-hero">
+      <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      <p class="eyebrow">Completed Case Study · 2026</p>
+      <h1>AI Phishing Email Analyzer</h1>
+      <p class="case-lead">A defensive email-analysis application that combines transparent Python detection rules with optional local-AI explanations while keeping scoring, evidence, URL counts, and analyst validation outside the generative model.</p>
+      <ul class="tag-list tag-list--large"><li>Python</li><li>Streamlit</li><li>Ollama</li><li>Qwen</li><li>Detection Engineering</li><li>AI Guardrails</li></ul>
+      <div class="case-actions"><a class="button button--primary" href="../docs/AI_Phishing_Email_Analyzer_Portfolio_Report.pdf" target="_blank" rel="noreferrer">Open full report</a><a class="button button--secondary" href="https://github.com/Payinde/AI-Phishing-Email-Analyzer" target="_blank" rel="noreferrer">View GitHub</a><a class="button button--secondary" href="../projects.html">View project archive</a></div>
+    </header>
+
+    <figure class="case-image"><img src="../img/project-phishing.svg" alt="AI Phishing Email Analyzer workflow showing sanitized email, rule-based evidence, local AI explanation, and analyst validation"></figure>
+
+    <div class="case-grid">
+      <section class="case-section"><h2>Objective</h2><p>Build an explainable phishing-analysis workflow that accepts sanitized email content, extracts sender and URL evidence, assigns a transparent risk score, and produces findings suitable for analyst review.</p></section>
+      <section class="case-section"><h2>Architecture</h2><p><code>analyzer.py</code> controls parsing, indicators, scoring, and classification. <code>ai_explainer.py</code> constrains the local Ollama model to potential-impact wording. <code>app.py</code> provides the Streamlit interface and downloadable JSON report.</p></section>
+      <section class="case-section"><h2>Detection coverage</h2><p>The engine checks suspicious language, multiline sender headers, sender-domain mismatches, Microsoft and HMRC impersonation, insecure HTTP, IP-based links, shorteners, punycode, and dangerous file extensions.</p></section>
+      <section class="case-section"><h2>Evidence-led correction</h2><p>Initial testing exposed three false negatives. Detection Engine v2 added expanded social-engineering phrases, corrected header parsing, sender-domain extraction, and brand-domain validation. HMRC, password-expiration, and Outlook-reactivation simulations were then classified High.</p></section>
+      <section class="case-section"><h2>Local-AI guardrails</h2><p>The AI cannot change the score, classification, indicator list, or exact URL count. Unsupported claims, repeated wording, malformed fragments, unexpected headings, excessive length, and overconfident conclusions are rejected in favor of a deterministic fallback.</p></section>
+      <section class="case-section"><h2>Testing</h2><p>The final suite contains seven analyzer tests and six AI-quality tests. All 13 tests passed locally and again from a fresh clone of the public GitHub repository.</p></section>
+      <section class="case-section"><h2>Privacy and safety</h2><p>Testing uses sanitized content and reserved <code>.test</code> domains. URLs are extracted as text and are not visited. Raw email content is excluded from the downloadable JSON report.</p></section>
+      <section class="case-section"><h2>Outcome</h2><p>The completed project demonstrates Python application development, phishing analysis, regression testing, local-AI integration, guardrail design, privacy-aware reporting, Git/GitHub workflow, documentation, and reproducible validation.</p></section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer"><p>&copy; <span data-year></span> Ayinde Perouza. IT Support &amp; Cybersecurity Portfolio.</p><a href="#top" class="footer-top">Back to top</a></footer>
+<button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+<script src="../js/index.js"></script>
+</body>
+</html>

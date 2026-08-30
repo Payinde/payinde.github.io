@@ -134,6 +134,19 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
 .project-card a:not(.button):hover { text-decoration:underline; }
 .project-list { display:grid; gap:1rem; }
 .project-list--featured { max-width:980px; margin:0 auto; }
+.homepage-project-groups { max-width:none; gap:2rem; }
+.featured-project-group { display:grid; gap:1rem; }
+.featured-project-group + .featured-project-group { border-top:1px solid var(--line); padding-top:2rem; }
+.featured-project-group__heading { display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; }
+.featured-project-group__heading h3 { margin:.2rem 0; font-size:1.55rem; }
+.featured-project-group__heading p { margin:.2rem 0 0; color:var(--muted); max-width:68ch; }
+.featured-project-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; align-items:start; }
+.featured-project-grid .project-summary { grid-template-columns:1fr auto; align-items:start; }
+.featured-project-grid .project-summary .project-card__image { grid-column:1 / -1; height:auto; aspect-ratio:16 / 9; }
+.featured-project-grid .project-summary__content { min-width:0; }
+.featured-project-grid .project-summary__content p { font-size:.92rem; }
+.featured-project-grid .project-summary::after { align-self:start; }
+.homepage-archive-only { display:none; }
 .project-accordion { display:block; overflow:hidden; padding:0; }
 .project-summary { list-style:none; cursor:pointer; display:grid; grid-template-columns:minmax(120px,190px) 1fr auto; gap:1rem; align-items:center; padding:.9rem; }
 .project-summary::-webkit-details-marker { display:none; }
@@ -210,6 +223,9 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
   .section__heading--split { align-items:flex-start; flex-direction:column; }
   .section__actions { justify-content:flex-start; }
   .project-card--featured { grid-column:auto; }
+  .featured-project-grid { grid-template-columns:1fr; }
+  .featured-project-group__heading { align-items:flex-start; flex-direction:column; }
+  .featured-project-group__heading .section__actions { justify-content:flex-start; }
 }
 @media (max-width: 840px) {
   .project-summary { grid-template-columns:1fr auto; }

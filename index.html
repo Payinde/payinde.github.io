@@ -46,7 +46,6 @@
       </p>
       <div class="hero__actions">
         <a class="button button--primary" href="#projects">View Projects</a>
-        <a class="button button--secondary" href="#contact">Let’s Connect</a>
         <a class="button button--secondary" href="docs/Ayinde_Perouza_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
       </div>
       <div class="terminal-feed" aria-label="Animated cybersecurity activity feed">
@@ -136,15 +135,17 @@
       <div>
         <p class="eyebrow">Featured Projects</p>
         <h2>Selected labs, case studies, and verified skill work.</h2>
-        <p class="section__intro">The homepage highlights the strongest work first. Use the dropdown arrows to expand details, or open the full project archive for the complete list.</p>
-      </div>
-      <div class="section__actions">
-        <a class="button button--skill-sheet" href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer" aria-label="View Level Effect Skill Sheet in a new tab">View Level Effect Skill Sheet <span aria-hidden="true">↗</span></a>
-        <a class="button button--secondary" href="projects.html">View All Projects</a>
+        <p class="section__intro">Use the dropdown arrows to expand details, or open the full project archive for the complete list.</p>
       </div>
     </div>
 
-    <div class="project-list project-list--featured">
+    <div class="project-list project-list--featured homepage-project-groups">
+      <section class="featured-project-group" aria-labelledby="level-effect-projects">
+        <div class="featured-project-group__heading">
+          <div><p class="eyebrow">Verified training</p><h3 id="level-effect-projects">Level Effect Verified Projects</h3><p>Scenario-based investigations and practical training completed through Level Effect.</p></div>
+          <div class="section__actions"><a class="button button--skill-sheet" href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer">View Level Effect Skill Sheet <span aria-hidden="true">↗</span></a><a class="button button--secondary" href="projects.html">View Level Effect Work</a></div>
+        </div>
+        <div class="featured-project-grid">
       <details class="project-card project-accordion" data-status="completed" open>
         <summary class="project-summary">
           <img src="img/phantom-credential.jpg" alt="PHANTOM CTI CTF credential preview" class="project-card__image">
@@ -179,6 +180,23 @@
 
       <details class="project-card project-accordion" data-status="completed">
         <summary class="project-summary">
+          <img src="img/cdt-credential.jpg" alt="Cyber Defense Technician certificate preview" class="project-card__image project-card__image--contain">
+          <div class="project-summary__content"><span class="status status--complete">Completed</span><h3>Cyber Defense Technician Practical Path</h3><p>Practical Level Effect path covering Windows, Linux, networking, Active Directory, helpdesk ticket handling, and evidence-based decisions.</p></div>
+        </summary>
+        <div class="project-card__body project-card__details"><p>Connected IT operations fundamentals to security analysis through scenario-based technical work and validation.</p><ul class="tag-list"><li>Windows</li><li>Linux</li><li>Networking</li><li>AD</li></ul><div class="card-actions"><a href="projects/cdt-practical-path.html">Read case study</a><a href="https://foundry.leveleffect.com/s/7156b671-9835-46e7-8a80-518ee98f5892/a902e199-8f91-49e5-9a1a-d8b1c347471b" target="_blank" rel="noreferrer">Skill Sheet</a></div></div>
+      </details>
+        </div>
+      </section>
+
+      <section class="featured-project-group" aria-labelledby="independent-projects">
+        <div class="featured-project-group__heading">
+          <div><p class="eyebrow">Self-directed work</p><h3 id="independent-projects">Independent Labs &amp; Projects</h3><p>Infrastructure, security operations, administration, and development work supported by public evidence.</p></div>
+          <div class="section__actions"><a class="button button--skill-sheet" href="https://github.com/Payinde" target="_blank" rel="noreferrer">Visit GitHub <span aria-hidden="true">↗</span></a><a class="button button--secondary" href="projects.html">View All Projects</a></div>
+        </div>
+        <div class="featured-project-grid">
+
+      <details class="project-card project-accordion" data-status="completed">
+        <summary class="project-summary">
           <img src="img/project-wazuh.svg" alt="Wazuh SOC lab and AI-assisted triage illustration" class="project-card__image">
           <div class="project-summary__content">
             <span class="status status--complete">Completed</span>
@@ -193,8 +211,26 @@
         </div>
       </details>
 
+      <details class="project-card project-accordion" data-status="completed">
+        <summary class="project-summary">
+          <img src="img/project-phishing.svg" alt="AI Phishing Email Analyzer illustration" class="project-card__image">
+          <div class="project-summary__content"><span class="status status--complete">Completed</span><h3>AI Phishing Email Analyzer</h3><p>Built a transparent phishing-analysis application with Python, Streamlit, optional local Ollama explanations, guardrails, JSON reporting, and 13 automated tests.</p></div>
+        </summary>
+        <div class="project-card__body project-card__details"><p>Detection Engine v2 corrected three false negatives through expanded language rules, sender-domain parsing, and brand-impersonation validation while keeping AI outside the scoring decision.</p><ul class="tag-list"><li>Python</li><li>Streamlit</li><li>Ollama</li><li>Detection Engineering</li></ul><div class="card-actions"><a href="projects/ai-phishing-email-analyzer.html">Read case study</a><a href="docs/AI_Phishing_Email_Analyzer_Portfolio_Report.pdf" target="_blank" rel="noreferrer">Open report</a><a href="https://github.com/Payinde/AI-Phishing-Email-Analyzer" target="_blank" rel="noreferrer">GitHub</a></div></div>
+      </details>
 
       <details class="project-card project-accordion" data-status="completed">
+        <summary class="project-summary">
+          <img src="img/project-ad.svg" alt="Enterprise Active Directory lab illustration" class="project-card__image">
+          <div class="project-summary__content"><span class="status status--complete">Completed</span><h3>Windows Enterprise Administration &amp; Active Directory Security Lab</h3><p>Enterprise-style Windows Server and Active Directory work covering AD DS, DNS/DHCP, Group Policy, forest trusts, delegation, recovery, and security validation.</p></div>
+        </summary>
+        <div class="project-card__body project-card__details"><p>Documented administration, troubleshooting, remediation, and validation across controlled Windows domains and a least-privilege delegation challenge.</p><ul class="tag-list"><li>Windows Server</li><li>AD DS</li><li>GPO</li><li>PowerShell</li></ul><div class="card-actions"><a href="projects/windows-enterprise-ad-lab.html">Read case study</a><a href="docs/Windows_Enterprise_Administration_AD_Security_Lab_Report.pdf" target="_blank" rel="noreferrer">Open report</a></div></div>
+      </details>
+        </div>
+      </section>
+
+
+      <details class="project-card project-accordion homepage-archive-only" data-status="completed">
         <summary class="project-summary">
           <img src="img/project-ubuntu.svg" alt="Ubuntu secure baseline project illustration" class="project-card__image">
           <div class="project-summary__content">
@@ -210,7 +246,7 @@
         </div>
       </details>
 
-      <details class="project-card project-accordion" data-status="completed">
+      <details class="project-card project-accordion homepage-archive-only" data-status="completed">
         <summary class="project-summary">
           <img src="img/cdt-credential.jpg" alt="Cyber Defense Technician certificate preview" class="project-card__image project-card__image--contain">
           <div class="project-summary__content">
@@ -226,12 +262,12 @@
         </div>
       </details>
 
-      <details class="project-card project-accordion" data-status="completed">
+      <details class="project-card project-accordion homepage-archive-only" data-status="completed">
         <summary class="project-summary">
           <img src="img/project-ad.svg" alt="Enterprise AD lab illustration" class="project-card__image">
           <div class="project-summary__content">
             <span class="status status--complete">Completed</span>
-            <h3>Windows Enterprise Administration & Active Directory Security Lab</h3>
+            <h3>Windows Enterprise Administration &amp; Active Directory Security Lab</h3>
             <p>Consolidated Windows Server and Active Directory lab covering AD DS, DNS/DHCP, Group Policy, forest trusts, delegated administration, file services recovery, PowerShell, and security validation.</p>
           </div>
         </summary>
@@ -242,7 +278,7 @@
         </div>
       </details>
 
-      <details class="project-card project-accordion" data-status="completed">
+      <details class="project-card project-accordion homepage-archive-only" data-status="completed">
         <summary class="project-summary">
           <img src="img/project-portfolio.svg" alt="Portfolio rebuild project illustration" class="project-card__image">
           <div class="project-summary__content">
@@ -310,7 +346,6 @@
   <p>&copy; <span data-year></span> Ayinde Perouza. IT Support & Cybersecurity Portfolio.</p>
   <a href="#top" class="footer-top">Back to top</a>
 </footer>
-<a class="floating-contact" href="#contact" aria-label="Jump to contact section">Let’s Connect</a>
 <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
 <script src="js/index.js"></script>
 </body>

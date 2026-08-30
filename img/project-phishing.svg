@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI Phishing Email Analyzer illustration</title>
+  <desc id="desc">An email passes through transparent phishing detection rules, local AI guardrails, and human analyst validation.</desc>
+  <defs>
+    <linearGradient id="phish-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="phish-accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+  </defs>
+  <rect width="900" height="560" rx="36" fill="url(#phish-bg)"/>
+  <g opacity=".16" stroke="#94a3b8"><path d="M70 100H830M70 200H830M70 300H830M70 400H830"/></g>
+  <text x="70" y="86" font-family="Inter,Segoe UI,Arial" font-size="40" fill="#e5f3ff" font-weight="800">AI Phishing Email Analyzer</text>
+  <text x="70" y="128" font-family="Inter,Segoe UI,Arial" font-size="22" fill="#bae6fd">Transparent rules • Local AI • Human validation</text>
+  <rect x="78" y="195" width="210" height="150" rx="24" fill="#172554" stroke="#38bdf8" stroke-width="3"/>
+  <path d="M105 230H261V312H105Z M105 230L183 282L261 230" fill="none" stroke="#e0f2fe" stroke-width="8" stroke-linejoin="round"/>
+  <text x="183" y="375" font-family="Inter,Segoe UI,Arial" font-size="20" text-anchor="middle" fill="#bae6fd" font-weight="700">Sanitized email</text>
+  <circle cx="450" cy="270" r="102" fill="#0f172a" stroke="url(#phish-accent)" stroke-width="12"/>
+  <path d="M450 200L508 222V266C508 312 480 340 450 354C420 340 392 312 392 266V222Z" fill="#164e63" stroke="#67e8f9" stroke-width="4"/>
+  <path d="M423 270L443 290L481 244" fill="none" stroke="#a7f3d0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="450" y="405" font-family="Inter,Segoe UI,Arial" font-size="20" text-anchor="middle" fill="#bae6fd" font-weight="700">Rules + evidence</text>
+  <rect x="618" y="175" width="214" height="92" rx="20" fill="#312e81" stroke="#a78bfa" stroke-width="3"/>
+  <text x="725" y="214" font-family="Inter,Segoe UI,Arial" font-size="23" text-anchor="middle" fill="#fff" font-weight="800">Local AI</text>
+  <text x="725" y="242" font-family="Inter,Segoe UI,Arial" font-size="16" text-anchor="middle" fill="#ddd6fe">Explain only</text>
+  <rect x="618" y="303" width="214" height="92" rx="20" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+  <text x="725" y="342" font-family="Inter,Segoe UI,Arial" font-size="23" text-anchor="middle" fill="#fff" font-weight="800">Analyst</text>
+  <text x="725" y="370" font-family="Inter,Segoe UI,Arial" font-size="16" text-anchor="middle" fill="#bbf7d0">Final authority</text>
+  <g fill="none" stroke="#22d3ee" stroke-width="4" stroke-dasharray="10 11" stroke-linecap="round"><path d="M288 270H348"/><path d="M552 270C585 270 590 221 618 221"/><path d="M552 270C585 270 590 349 618 349"/></g>
+  <text x="70" y="505" font-family="Inter,Segoe UI,Arial" font-size="18" fill="#bae6fd">Sender domain • suspicious language • URLs • scoring • guardrails • JSON report • 13 tests</text>
+</svg>
