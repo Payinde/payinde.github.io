@@ -336,42 +336,10 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
   max-width:720px;
   margin:.75rem auto 0;
 }
-.floating-contact {
-  position:fixed;
-  right:1rem;
-  bottom:4.65rem;
-  z-index:900;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:46px;
-  padding:.75rem 1rem;
-  border-radius:999px;
-  color:#00111a;
-  background:linear-gradient(90deg, var(--accent), #67e8f9);
-  border:1px solid transparent;
-  box-shadow:var(--shadow), 0 0 24px rgba(34,211,238,.16);
-  font-weight:900;
-  text-decoration:none;
-  transition:transform .2s ease, box-shadow .2s ease;
-}
-.floating-contact:hover {
-  transform:translateY(-2px);
-  box-shadow:var(--shadow), 0 0 32px rgba(34,211,238,.24);
-}
 @media (max-width:980px) {
   .about-panel,
   .quick-facts--simple,
   .skill-list { grid-template-columns:1fr; }
-}
-@media (max-width:560px) {
-  .floating-contact {
-    right:.85rem;
-    bottom:4.25rem;
-    min-height:42px;
-    padding:.62rem .82rem;
-    font-size:.86rem;
-  }
 }
 
 
@@ -400,7 +368,7 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
 }
 .hero--landing h1 {
   max-width: 760px;
-  font-size: clamp(2.8rem, 6.1vw, 5.4rem);
+  font-size: clamp(2.45rem, 5.2vw, 4.45rem);
   letter-spacing: -.06em;
 }
 .hero-summary--landing {
@@ -476,7 +444,7 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
     max-width: none;
   }
   .hero--landing h1 {
-    font-size: clamp(2.4rem, 10vw, 4.1rem);
+    font-size: clamp(2.2rem, 9vw, 3.6rem);
   }
   .hero__visual .profile-card__imagewrap {
     max-width: 280px;
