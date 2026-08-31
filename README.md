@@ -1,6 +1,6 @@
 # Ayinde Perouza — IT & Cybersecurity Portfolio
 
-This is a static HTML/CSS/JavaScript portfolio focused on IT support, cybersecurity operations, DFIR labs, IAM, network analysis, and cloud security growth.
+This is a static HTML/CSS/JavaScript portfolio focused on IT support, cybersecurity operations, DFIR labs, IAM, network analysis, and security monitoring growth.
 
 ## What changed in this version
 
@@ -67,6 +67,3 @@ Added the consolidated Windows Enterprise Administration & Active Directory Secu
 - Reworked Core Skills into grouped skill rows for easier scanning.
 - Added stronger Let’s Connect calls to action in the hero, navigation, floating shortcut, and contact section.
 - Added a persistent floating contact shortcut across homepage, project archive, and case-study pages.
-
-## Latest header update
-- Updated the homepage hero/header summary to clearly state 7+ years of enterprise IT experience and the practical cybersecurity skills being built.

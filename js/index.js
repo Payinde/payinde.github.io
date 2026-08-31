@@ -72,7 +72,7 @@ if (feed) {
     '[iam] access request validated against approval...',
     '[dfir] persistence check queued: tasks, WMI, Run keys...',
     '[report] remediation and lessons learned documented...',
-    '[cloud] logging and identity controls added to roadmap...'
+    '[skills] secure administration and SOC triage practice logged...'
   ];
   let i = 0;
   setInterval(() => {

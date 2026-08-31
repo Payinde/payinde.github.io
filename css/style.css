@@ -68,12 +68,17 @@ img { max-width: 100%; display: block; }
 .section { max-width: var(--max); margin:0 auto; padding: clamp(1.8rem, 3.5vw, 3rem) clamp(1rem, 4vw, 2rem); }
 .eyebrow { margin:0 0 .75rem; color:var(--accent); font-weight:900; text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; }
 h1,h2,h3 { margin:0; line-height:1.08; letter-spacing:-.04em; }
-h1 { font-size: clamp(2.45rem, 6.5vw, 5.65rem); }
+h1 { font-size: clamp(2.35rem, 5.2vw, 4.45rem); }
 h2 { font-size: clamp(1.9rem, 3.6vw, 3.1rem); }
 h3 { font-size: 1.25rem; letter-spacing:-.02em; }
 p { color: var(--muted); }
 .hero { min-height: calc(76vh - 72px); display:grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: clamp(1.8rem, 5vw, 4rem); align-items:center; }
 .hero__lead { font-size: clamp(1.05rem, 1.4vw, 1.22rem); max-width: 68ch; }
+.hero-summary { max-width: 76ch; margin-top:1.1rem; display:grid; gap:.85rem; }
+.hero-summary p { margin:0; font-size: clamp(1rem, 1.15vw, 1.12rem); color:var(--muted); }
+.hero-summary strong { color:var(--text); }
+.hero-focus { margin:1.05rem 0 0; color:var(--muted); font-weight:800; }
+.hero-focus .hero-rotate { display:inline-block; vertical-align:baseline; width:min(100%, calc(var(--role-width, 18ch) + 1ch)); min-height:1em; }
 .hero-rotate { display:block; width:min(100%, calc(var(--role-width, 18ch) + 1ch)); min-height:1.08em; color:transparent; background:linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; transition: opacity .52s ease, transform .52s cubic-bezier(.22,.61,.36,1), filter .52s ease; transform:translateY(0); filter:blur(0); will-change:opacity,transform,filter; contain:content; }
 .hero-rotate.is-changing { opacity:0; transform:translateY(7px); filter:blur(1.5px); }
 .hero__actions,.contact-actions,.card-actions,.case-actions { display:flex; flex-wrap:wrap; gap:.85rem; align-items:center; margin-top:1.35rem; }
@@ -134,19 +139,6 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
 .project-card a:not(.button):hover { text-decoration:underline; }
 .project-list { display:grid; gap:1rem; }
 .project-list--featured { max-width:980px; margin:0 auto; }
-.homepage-project-groups { max-width:none; gap:2rem; }
-.featured-project-group { display:grid; gap:1rem; }
-.featured-project-group + .featured-project-group { border-top:1px solid var(--line); padding-top:2rem; }
-.featured-project-group__heading { display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; }
-.featured-project-group__heading h3 { margin:.2rem 0; font-size:1.55rem; }
-.featured-project-group__heading p { margin:.2rem 0 0; color:var(--muted); max-width:68ch; }
-.featured-project-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; align-items:start; }
-.featured-project-grid .project-summary { grid-template-columns:1fr auto; align-items:start; }
-.featured-project-grid .project-summary .project-card__image { grid-column:1 / -1; height:auto; aspect-ratio:16 / 9; }
-.featured-project-grid .project-summary__content { min-width:0; }
-.featured-project-grid .project-summary__content p { font-size:.92rem; }
-.featured-project-grid .project-summary::after { align-self:start; }
-.homepage-archive-only { display:none; }
 .project-accordion { display:block; overflow:hidden; padding:0; }
 .project-summary { list-style:none; cursor:pointer; display:grid; grid-template-columns:minmax(120px,190px) 1fr auto; gap:1rem; align-items:center; padding:.9rem; }
 .project-summary::-webkit-details-marker { display:none; }
@@ -223,9 +215,6 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
   .section__heading--split { align-items:flex-start; flex-direction:column; }
   .section__actions { justify-content:flex-start; }
   .project-card--featured { grid-column:auto; }
-  .featured-project-grid { grid-template-columns:1fr; }
-  .featured-project-group__heading { align-items:flex-start; flex-direction:column; }
-  .featured-project-group__heading .section__actions { justify-content:flex-start; }
 }
 @media (max-width: 840px) {
   .project-summary { grid-template-columns:1fr auto; }
