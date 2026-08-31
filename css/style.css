@@ -373,3 +373,101 @@ html[data-theme="light"] .terminal-feed__body, html[data-theme="light"] .termina
     font-size:.86rem;
   }
 }
+
+
+/* Hero landing refinement: name-first intro with clearer experience and research focus */
+.hero--landing {
+  min-height: calc(82vh - 72px);
+  grid-template-columns: minmax(0, 1.05fr) minmax(330px, .95fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.hero--landing .hero__content {
+  max-width: 760px;
+}
+.hero__intro {
+  margin: .25rem 0 .75rem;
+  color: var(--text);
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.hero__intro strong {
+  color: var(--accent);
+}
+.hero--landing h1 {
+  max-width: 760px;
+  font-size: clamp(2.8rem, 6.1vw, 5.4rem);
+  letter-spacing: -.06em;
+}
+.hero-summary--landing {
+  max-width: 72ch;
+  margin-top: 1.2rem;
+  gap: .95rem;
+}
+.hero-summary--landing p {
+  font-size: clamp(1.08rem, 1.35vw, 1.25rem);
+  line-height: 1.62;
+}
+.hero-research {
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.hero-focus {
+  font-size: clamp(1rem, 1.25vw, 1.16rem);
+  margin-top: 1.1rem;
+}
+.hero__visual {
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+}
+.hero__visual .terminal-feed {
+  margin-top: 0;
+  max-width: none;
+}
+.hero__visual .terminal-feed__body {
+  height: 7.4rem;
+}
+.hero__visual .profile-card {
+  animation: float 16s ease-in-out infinite;
+}
+.hero__visual .profile-card__imagewrap {
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.hero__visual .profile-card__imagewrap img {
+  object-position: 52% 18%;
+}
+.hero__visual .profile-card__body {
+  text-align: center;
+}
+@media (max-width: 980px) {
+  .hero--landing {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero--landing .hero__content {
+    max-width: none;
+  }
+  .hero--landing h1 {
+    font-size: clamp(2.4rem, 10vw, 4.1rem);
+  }
+  .hero__visual .profile-card__imagewrap {
+    max-width: 280px;
+  }
+}
+@media (max-width: 560px) {
+  .hero-summary--landing p {
+    font-size: 1rem;
+  }
+  .hero__intro {
+    letter-spacing: .04em;
+  }
+  .hero__visual .terminal-feed__body {
+    height: 8rem;
+  }
+}

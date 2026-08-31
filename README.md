@@ -67,3 +67,8 @@ Added the consolidated Windows Enterprise Administration & Active Directory Secu
 - Reworked Core Skills into grouped skill rows for easier scanning.
 - Added stronger Let’s Connect calls to action in the hero, navigation, floating shortcut, and contact section.
 - Added a persistent floating contact shortcut across homepage, project archive, and case-study pages.
+
+
+## Latest update
+
+Refined homepage hero section with name-first introduction, professional experience summary, solving/researching statement, rotating practical skills line, profile card, and analyst-feed visual.
