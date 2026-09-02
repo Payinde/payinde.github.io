@@ -62,6 +62,11 @@ Added the consolidated Windows Enterprise Administration & Active Directory Secu
 - `docs/Build_a_SOC_Lab_with_Wazuh_AI_Assisted_SOC_Triage_Report.pdf` — supporting portfolio report.
 - `img/project-wazuh.svg` — project card illustration.
 
+## AI Phishing Email Analyzer update
+- Added the completed AI Phishing Email Analyzer to the homepage and full project archive.
+- Added a dedicated case study explaining the rule-based detection engine, local-AI separation, guardrails, Detection Engine v2 corrections, and 13-test validation.
+- Linked the public GitHub repository and the complete portfolio report.
+
 ## UX and contact refinement
 - Simplified the About section into a calmer reading layout with one main summary panel and one current-focus panel.
 - Reworked Core Skills into grouped skill rows for easier scanning.
